@@ -12,6 +12,19 @@ ep2=Rm/Rd-1
 th00=289 #reference temperature
 tmelt=273.16 #melting point of water
 
+
+#############################
+#----- Graphic details -----#
+#############################
+
+#letters
+lettering=paste0("(",letters,")")
+
+#octant names and colors
+octname=c("Entrainment shell","Mixing updraft","Ascending shell","Updraft","Entrainment","Mixing shell","Downdraft","Subsiding shell")
+PALOCT=c("lightpink","yellow","orange2","red3","palegreen","darkgreen","navy","royalblue")
+
+
 #############################
 #----- Spatial tools -------#
 #############################

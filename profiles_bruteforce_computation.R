@@ -289,14 +289,11 @@ for (nt in ntimes) {
 	# ------------------------------- #
 
 
-	#useful names, palettes, values...
+	#useful graphic details values...
 	TOP=1200
 	LL=4
-	PALOCT=c("lightpink","yellow","orange2","red3","palegreen","darkgreen","navy","royalblue")
 	kk=1:length(counts[,1])
-	kkk=c("Entrainment shell","Mixing Updraft","Ascending shell","Updraft","Entrainment","Mixing shell","Downdraft","Subsiding shell")
 	heights=c(1,0.95,0.8,0.5,0.2,0.05)
-	lettering=c("(a)","(b)","(c)","(d)","(e)","(f)","(g)","(h)","(i)")
 	cex.letter=3
 
 	# ------------------------------- #
@@ -311,7 +308,7 @@ for (nt in ntimes) {
 	points(circ_list[["circ_4"]],lev[zz],col="red",type="l",lwd=LL)
 	points(circ_list[["circ_5"]],lev[zz],col="navy",type="l",lty=3,lwd=LL)
 	abline(h=zi,col="darkgreen")
-	legend(min(XX),TOP,c(kkk[c(4,7)],"Downdraft+Entrainment"),col=c("red","navy","navy"),lwd=LL,lty=c(1,1,3),cex=2)
+	legend(min(XX),TOP,c(octname[c(4,7)],"Downdraft+Entrainment"),col=c("red","navy","navy"),lwd=LL,lty=c(1,1,3),cex=2)
 	dev.off()
 
 
@@ -348,7 +345,7 @@ for (nt in ntimes) {
 			points(profile_list[[var]][,noct],lev,type="l",lwd=LL,col=PPP[noct])
 		}
 	abline(v=0)
-	legend(min(XX),TOP,paste(kk,kkk),col=PALOCT[kk],cex=3,lwd=LL)
+	legend(min(XX),TOP,paste(kk,octname),col=PALOCT[kk],cex=3,lwd=LL)
 	}
 
 	dev.off()
@@ -381,7 +378,7 @@ for (nt in ntimes) {
 		}
 
 		abline(v=0)
-		legend(min(XX),TOP,paste(kk,kkk),col=PALOCT[kk],cex=3,lwd=LL)
+		legend(min(XX),TOP,paste(kk,octname),col=PALOCT[kk],cex=3,lwd=LL)
 		}
 
 	dev.off()

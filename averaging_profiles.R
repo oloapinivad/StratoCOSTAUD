@@ -69,11 +69,8 @@ for (var in varcirc) {
 
 #useful names, palettes, values...
 TOP=1200
-PALOCT=c("lightpink","yellow","orange2","red3","palegreen","darkgreen","navy","royalblue")
-kkk=c("Entrainment shell","Mixing Updraft","Ascending shell","Updraft","Entrainment","Mixing shell","Downdraft","Subsiding shell")
 kk=1:length(kkk)
 heights=c(1,0.95,0.8,0.5,0.2,0.05)
-lettering=c("(a)","(b)","(c)","(d)","(e)","(f)","(g)","(h)","(i)")
 cex.letter=3
 LL=6
 zi_mean=mean(zi)
