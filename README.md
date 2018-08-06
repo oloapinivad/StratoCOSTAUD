@@ -1,4 +1,4 @@
-# StratoCostaud v0.1
+# StratoCOSTAUD v0.1
 ## COherent STructures AUtomatic Detector for Stratocumulus LES simulations
 
 July 2018
