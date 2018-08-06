@@ -1,14 +1,12 @@
 #averaging profiles
 #rm(list=ls())
 CODEDIR="/home/paolo/StratoCostaud"
+source(file.path(CODEDIR,"config.R"))
 source(file.path(CODEDIR,"les_routines.R"))
 
 # CONFIGURATION 
-model="uclales2"
 expcode="tecs00"
 exptype="dycoms2_rf01"
-DIRBASE=file.path("/work/users/paolo",model)
-FIGBASE="/home/paolo/scratch/coherent_test"
 expname=paste(exptype,expcode,sep="_")
 ntimes=1:31
 

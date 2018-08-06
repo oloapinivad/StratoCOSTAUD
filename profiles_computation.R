@@ -1,12 +1,12 @@
 #program for octants and figures for dycoms2_rf01 stratocumulus convection
 
-library(SDMTools) # for connected component labeling
 CODEDIR="/home/paolo/StratoCostaud"
+source(file.path(CODEDIR,"config.R"))
 source(file.path(CODEDIR,"les_routines.R"))
 
 args=commandArgs(trailingOnly=TRUE)
 if (length(args)==0) {
-	expcode="tecs00"
+	expcode="fsss00"
 	ntimes=seq(1)
 } else {
 	expcode=args[1]
@@ -23,10 +23,7 @@ do_savememory=T
 do_sink=F
 
 # CONFIGURATION 
-model="uclales2"
 exptype="dycoms2_rf01"
-DIRBASE=file.path("/work/users/paolo",model)
-FIGBASE="/home/paolo/scratch/coherent_test"
 
 #vars to be loaded
 varlist=c("u","v","w","scbl","scft","qtot","tl","ql","rflx","prss")

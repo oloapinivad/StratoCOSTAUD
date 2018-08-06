@@ -1,6 +1,6 @@
 #program for octants and figures for dycoms2_rf01 stratocumulus convection
-library(fields)
 CODEDIR="/home/paolo/StratoCostaud"
+source(file.path(CODEDIR,"config.R"))
 source(file.path(CODEDIR,"les_routines.R"))
 
 #setup flags
@@ -12,7 +12,6 @@ do_figures=T
 nt=31
 expcode="tecs00"
 
-
 # ------------------------------- #
 # ------- START PROGRAM --------- # 
 # ------------------------------- #
@@ -20,10 +19,6 @@ model="uclales2"
 exptype="dycoms2_rf01"
 expname=paste(exptype,expcode,sep="_")
 print(paste("Expname:",expname))
-
-# configuration
-DIRBASE=file.path("/work/users/paolo",model)
-FIGBASE="/home/paolo/scratch/coherent_test"
 
 #vars to be loaded
 varlist=c("u","v","w","scbl","scft","qtot","tl","ql","rflx","prss")

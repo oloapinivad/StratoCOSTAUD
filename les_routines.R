@@ -442,6 +442,7 @@ return(list(maximum=maximum,objective=objective))
 # Shape Factor function
 shape.factor.fast<-function(lon,lat,field,octvalue,min.area=50000)
 {
+	require(SDMTools) # for connected component labeling
         #properties as function of the octant
         if (octvalue==5) {
 		field[field==5 | field==7]=10; field[field!=10]=0; field[field!=0]=1
